@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Formulario de Suscripción</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="contenedor-principal">
+        <h1>¡Únete a nuestro equipo!</h1>
+        <p>Recibe las mejores ofertas en ropa deportiva</p>
+
+        <div class="banner">
+            <strong>Recibe el 15% al realizar tu primera compra</strong>
+        </div>
+
+        <form id="form-principal">
+
+            <label>Email</label>
+            <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+
+            <label>Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+            <label>¿Qué te interesa? (opcional)</label>
+            <div class="contenedor-check">
+                <label><input type="checkbox" name="intereses" value="Calzado deportivo"> Calzado deportivo</label>
+                <label><input type="checkbox" name="intereses" value="Ropa para hombre"> Ropa para hombre</label>
+                <label><input type="checkbox" name="intereses" value="Ropa para mujer"> Ropa para mujer</label>
+                <label><input type="checkbox" name="intereses" value="Accesorios"> Accesorios</label>
+            </div>
+
+            <div class="contenedor-check-term">
+                <label style="cursor: pointer;">
+                    <input type="checkbox" id="term" class="term"> Acepto la <a href="#">política de privacidad</a> y
+                    deseo recibir promociones.</label>
+            </div>
+
+            <button type="submit" class="boton-sub">Suscribirme ahora</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
